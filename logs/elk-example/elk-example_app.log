@@ -1,0 +1,13 @@
+[[32mINFO [m] 2021-01-27 23:06:27,509 ElkexampleApplication.logStarting() - Starting ElkexampleApplication using Java 13 on TC16799777 with PID 80923 (/Users/tcfkaradeniz/Documents/Dev/projects/personal/spring-boot-denemeler/elkviadocker/elkexample/target/classes started by tcfkaradeniz in /Users/tcfkaradeniz/Documents/Dev/projects/personal/spring-boot-denemeler/elkviadocker/elkexample)
+[[32mINFO [m] 2021-01-27 23:06:27,517 ElkexampleApplication.logStartupProfileInfo() - No active profile set, falling back to default profiles: default
+[[32mINFO [m] 2021-01-27 23:06:28,220 TomcatWebServer.initialize() - Tomcat initialized with port(s): 8080 (http)
+[[32mINFO [m] 2021-01-27 23:06:28,233 Http11NioProtocol.log() - Initializing ProtocolHandler ["http-nio-8080"]
+[[32mINFO [m] 2021-01-27 23:06:28,234 StandardService.log() - Starting service [Tomcat]
+[[32mINFO [m] 2021-01-27 23:06:28,235 StandardEngine.log() - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[[32mINFO [m] 2021-01-27 23:06:28,303 [/].log() - Initializing Spring embedded WebApplicationContext
+[[32mINFO [m] 2021-01-27 23:06:28,303 ServletWebServerApplicationContext.prepareWebApplicationContext() - Root WebApplicationContext: initialization completed in 751 ms
+[[32mINFO [m] 2021-01-27 23:06:28,422 ThreadPoolTaskExecutor.initialize() - Initializing ExecutorService 'applicationTaskExecutor'
+[[32mINFO [m] 2021-01-27 23:06:28,534 Http11NioProtocol.log() - Starting ProtocolHandler ["http-nio-8080"]
+[[32mINFO [m] 2021-01-27 23:06:28,557 TomcatWebServer.start() - Tomcat started on port(s): 8080 (http) with context path ''
+[[32mINFO [m] 2021-01-27 23:06:28,568 ElkexampleApplication.logStarted() - Started ElkexampleApplication in 1.407 seconds (JVM running for 2.271)
+[[32mINFO [m] 2021-01-27 23:08:27,136 ThreadPoolTaskExecutor.shutdown() - Shutting down ExecutorService 'applicationTaskExecutor'
