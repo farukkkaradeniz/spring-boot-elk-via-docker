@@ -2,7 +2,7 @@
 
 <h3>Overview</h3>
 
-In this project we are getting spring boot integration with logstash and ELK stack over log4j2.
+In this project we are getting spring boot integration with logstash and ELK Stack via log4j2.
 
 #
 
@@ -27,7 +27,7 @@ First of all we need to add required dependencies in pom.xml file.
 </dependency>
 ````
 
-After added necessary dependencies, now we can add log4j2.xml file in resources folder under src/main. There is an example for log4j2.xml content. I used file appender,console appender and logstash appender. If you want to user logstash only you can remove other appenders. 
+After adding dependencies, now we can configure log4j2.xml file in resources folder under src/main. I used file appender,console appender and logstash appender. If you want to use logstash only you can remove other appenders. 
 
 ````
 <Configuration>
@@ -62,7 +62,7 @@ After added necessary dependencies, now we can add log4j2.xml file in resources 
 </Configuration>
 ```` 
 
-The appender with type socket helps us to send logs logstash. For the integration logstash you need only this socket appender. host name and port number must be specified. I added a docker-compose.yml file in the project base directory and i use 9999 as port for logstash. You can change it inside /volumes/logstash/logstash.conf file. If you change the port number in config file don't forget chancing exposed port number from docker-compose file.
+The appender with type socket helps us to send logs to logstash. For the integration logstash, you need only this socket appender. Host name and port number must be specified in socket appender. I added a docker-compose.yml file in the project base directory and used 9999 as port for logstash. You can change it in project base directory /volumes/logstash/logstash.conf file. If you change the port number in config file don't forget chancing exposed port number from docker-compose file.
 
 After doing given steps now you are ready for integration logstash.
 
@@ -72,19 +72,19 @@ If you already installed docker just run `$ docker-compose build` command.
 
 # Running Containers
 
-After containers build completed now you can starting containers with `$ docker-compose up` command.
+Containers builded successfully then you can start containers with `$ docker-compose up` command.
 
-http://localhost:5601 => You can visualize logs at ELK stack.
+http://localhost:5601 => You can visualize logs at ELK Stack.
 
-Open the kibana and click discover menu. On first running you should add index pattern. After adding index pattern open discover panel again. 
+Open the kibana and click discover menu. First of all you should add index pattern. Then open discover panel again. 
 
 Hit the application rest endpoint with `$ curl http://localhost:8080`. 
 
 Now you can see Hello world message in Kibana discover panel.
 
 ###### Contact
-For any question
+For any question;
  
-mail : karadenizfaruk28@gmail.com
+Mail : karadenizfaruk28@gmail.com
 
-linkedin :  https://www.linkedin.com/in/faruk-karadeniz/ 
+Linkedin :  https://www.linkedin.com/in/faruk-karadeniz/ 
